@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Active Trail -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+        <video autoplay muted loop id="myVideo"  class="videoWrapper">
+                <source src="video2.mp4" type="video/mp4" id="videoSrc">
+        </video>
+
+        <ul class="gallery">
+            <li class="galleryItem"></li>
+            <li class="galleryItem"></li>
+            <li class="galleryItem"></li>
+            <li class="galleryItem"></li>
+        </ul>
+        
+    <!-- Active Trail form -->
+    
+        <form id="contentForm" action="https://webapi.mymarketing.co.il/Signup//PerformOptIn.aspx"
+        method="post" onsubmit="return Validate()">
+        
+        <div id="at-signup-container">
+                <div class="imgWrapper">
+                    <img src="hltlogo.png" alt="לוגו חלילית">
+                </div>
+                <h4>מבצעים בלעדיים לתושבי באר שבע ישירות למייל</h4>
+                <h4>הרשמו להטבות</h4>
+            <!-- Mandatory field in order to get the system working -->
+            <input type="hidden" value="728" name="mm_userid" />
+            <input type="hidden" value="registration" name="mm_key" />     
+            <input type="hidden" value="he" name="mm_culture" />       
+
+                        <input style='direction:rtl'
+                            class="at-signup-input" type="text" name='mm_newemail'
+                            id='mm_newemail' value="" placeholder="E-Mail" autofocus/>
+                        
+                        <input class="btn" type="submit" value="שלח">
+
+        </div>
+        
+        </form>
+        
+        <!-- end activetrail form -->
+        <!-- End Top -->
+            <!-- <div class="imgWrapper">
+                <img src="hltlogo.png" alt="לוגו חלילית">
+            </div> -->
+            <div class="text">
+                <h4>מדי חודש תקבלו מגוון מבצעים מוסיקליים</h4>
+                <p>כלי נגינה בהנחות מיוחדות עם משלוח חינם עד הבית!</p>
+                <p>שימו <span class="heart">♥</span> לקבל ההטבות יש להציג תעודת תושב או תעודת סטונדט המאשרת את המגורים\לימודים באזור באר שבע</p>
+                <!-- <p>נציג חלילית ייצור עמכם קשר לקבלת טופס האישור</p>  -->
+                <!-- <p><a href="http://www.halilit.com" class="btn">לאתר חלילית</a></p> -->
+                <footer>
+                    <p>כל הזכויות שמורות לחלילית פ. גרינשפן</p>
+                </footer>
+            </div>      
+</body>
+</html>
