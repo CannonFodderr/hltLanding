@@ -22,6 +22,7 @@ BODY
     min-height: 100vh;
     min-width: 100vw;
     margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 .galleryItem{
@@ -166,12 +167,13 @@ p{
 
 @media (max-width: 768px){
     #at-signup-container{
+        margin: 0 auto;
         position: fixed;
         width: 100vw;
     }
     .text{
         position: fixed;
-        top: 50vh;
+        top: 40vh;
         width: 100vw;
     }    
 }
