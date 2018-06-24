@@ -1,4 +1,4 @@
-var endTime = new Date("May 31, 2018 23:37:25").getTime();  
+var endTime = new Date("July 31, 2018 23:37:25").getTime();  
 
 var x = setInterval(function (){   
     var thisTime = new Date().getTime();   
@@ -13,6 +13,6 @@ var x = setInterval(function (){
 
   if (diff < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "המבצע הסתיים";
+    document.getElementById("clock").innerHTML = "המבצע הסתיים";
   }
 }, 1000)
